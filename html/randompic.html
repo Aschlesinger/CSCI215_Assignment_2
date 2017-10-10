@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/randompic.css">
+    <meta charset="UTF-8">
+    <title>Rando Pic</title>
+</head>
+
+
+<body>
+    <div id="wrapper">
+    <script>
+        var pics = ["../imgs/bike1.jpg","../imgs/bike2.jpg","../imgs/bike3.jpg","../imgs/bike4.jpg","../imgs/bike5.jpeg"]
+        var number = Math.floor(Math.random()*5);
+        var pic = pics[number];
+        document.getElementById("wrapper").style.backgroundImage = "url('"+pic+"')";
+    </script>
+    </div>
+</body>
+</html>
